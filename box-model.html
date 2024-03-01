@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 1000px;
+            scroll-behavior: auto;
+        }
+        /* p{
+            background-color: yellow;
+            border: 5px solid;
+            border-color: black;
+            border-radius: 20px;
+            text-align: center;
+
+            margin: 50px 20px;
+
+            padding: 20px;
+
+        } */
+
+        nav{
+            background-color: bisque;
+            border: 1px solid black;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
+
+        li{
+            display: inline-block;
+            width: 50px;
+            text-align: center;
+            margin-left: 10px;
+            border: 1px solid blue;
+        }
+
+        .profile{
+            border: 1px solid black;
+            margin: 10px;
+
+            position: absolute;
+            top: 50px;
+            left: 50px;
+
+            overflow: hidden;
+        }
+
+        img{
+            position: relative;
+        }
+
+        div{
+            position: absolute;
+            z-index: 10;
+        }
+
+        a{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            
+        }
+    </style>
+</head>
+<body>
+    <a href="#">TOP</a>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <p>ISI KONTEN</p>
+    <div class="profile">
+        <div>
+            <h1>Nama saya H1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut harum doloremque fugiat et ducimus blanditiis possimus quasi illo atque similique.</p>      
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShr8DQexPG7857DFFni7boz4yChoGTs29uCATRjrfgJQ&s" alt="">
+    </div>
+</body>
+</html>

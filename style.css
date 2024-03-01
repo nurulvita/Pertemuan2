@@ -1,0 +1,14 @@
+.main{
+    background-color: red;
+    color: white;
+    font-size: 30px;
+}
+
+#header{
+    background-color: green;
+    color: white;
+}
+
+.black{
+    color: black;
+}
